@@ -12,10 +12,10 @@
 
 
 
-/** this function is called by the application to interact
+/** TESTING this function is called by the application to interact
  * with the distributed clipboard.
  * 
- * @param COISOETALLLLLLLLclipboard_dir - directory  where  the  local clipboard was launched.
+ * @param clipboard_dir - directory  where  the  local clipboard was launched.
  * 
  * @return -1 if cannot be accessed or >0 in case of success. 
  * It will be used in all other functions as clipboard_id.
