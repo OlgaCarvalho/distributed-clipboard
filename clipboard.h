@@ -12,7 +12,7 @@
 
 
 
-/** TESTING this function is called by the application to interact
+/** This function is called by the application to interact
  * with the distributed clipboard.
  * 
  * @param clipboard_dir - directory  where  the  local clipboard was launched.
@@ -22,7 +22,7 @@
  */
 int clipboard_connect(char * clipboard_dir);
 
-/** this function copies the data pointed by buf to a region on the local 
+/** This function copies the data pointed by buf to a region on the local 
  * clipboard
  * 
  * @param clipboard_id - value  returned by clipboard_connect().
@@ -34,7 +34,7 @@ int clipboard_connect(char * clipboard_dir);
  */
 int clipboard_copy(int clipboard_id, int region, void *buf, size_t count);
 
-/** this function copies from the system to the application the data in a 
+/** This function copies from the system to the application the data in a 
  * certain region.
  * 
  * @param clipboard_id - value  returned by clipboard_connect(). 
@@ -46,7 +46,7 @@ int clipboard_copy(int clipboard_id, int region, void *buf, size_t count);
  */
 int clipboard_paste(int clipboard_id, int region, void *buf, size_t count);
 
-/** this function waits for a change on a certain region, and when it happens
+/** This function waits for a change on a certain region, and when it happens
  * the new data in that region is copied to memory pointed by buf up to a 
  * length of count.
  * 
@@ -59,7 +59,7 @@ int clipboard_paste(int clipboard_id, int region, void *buf, size_t count);
  */
 int clipboard_wait(int clipboard_id, int region, void *buf, size_t count);
 
-/** this function closes the connection between the application and the local
+/** This function closes the connection between the application and the local
  * clipboard.
  * 
  * @param clipboard_id - value  returned by clipboard_connect(). 
