@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Clipboard: clipboard.h File Reference</title>
+<title>Distributed Clipboard: clipboard.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,10 +21,9 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Clipboard
-   &#160;<span id="projectnumber">1.0.0</span>
+   <div id="projectname">Distributed Clipboard
+   &#160;<span id="projectnumber">v1.0.0</span>
    </div>
-   <div id="projectbrief">Distributed clipboard between applications and machines</div>
   </td>
  </tr>
  </tbody>
@@ -79,32 +78,41 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a75acd71dafcfe5e307088e9edc77518d"><td class="memItemLeft" align="right" valign="top"><a id="a75acd71dafcfe5e307088e9edc77518d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#a75acd71dafcfe5e307088e9edc77518d">SOCK_ADDRESS</a>&#160;&#160;&#160;&quot;./CLIPBOARD_SOCKET&quot;</td></tr>
-<tr class="memdesc:a75acd71dafcfe5e307088e9edc77518d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Socket directory to communicate with the clipboard. <br /></td></tr>
+<tr class="memitem:a75acd71dafcfe5e307088e9edc77518d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#a75acd71dafcfe5e307088e9edc77518d">SOCK_ADDRESS</a>&#160;&#160;&#160;&quot;./CLIPBOARD_SOCKET&quot;</td></tr>
 <tr class="separator:a75acd71dafcfe5e307088e9edc77518d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a3ca812ef003ef419a57d836e49bbca11"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#a3ca812ef003ef419a57d836e49bbca11">clipboard_connect</a> (char *clipboard_dir)</td></tr>
-<tr class="memdesc:a3ca812ef003ef419a57d836e49bbca11"><td class="mdescLeft">&#160;</td><td class="mdescRight">this function is called by the application to interact with the distributed clipboard.  <a href="#a3ca812ef003ef419a57d836e49bbca11">More...</a><br /></td></tr>
 <tr class="separator:a3ca812ef003ef419a57d836e49bbca11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62f59a8cbab5d9a47f13c26edef37d4e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#a62f59a8cbab5d9a47f13c26edef37d4e">clipboard_copy</a> (int clipboard_id, int region, void *buf, size_t count)</td></tr>
-<tr class="memdesc:a62f59a8cbab5d9a47f13c26edef37d4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">this function copies the data pointed by buf to a region on the local clipboard  <a href="#a62f59a8cbab5d9a47f13c26edef37d4e">More...</a><br /></td></tr>
 <tr class="separator:a62f59a8cbab5d9a47f13c26edef37d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10ef9f199fb074a7efafaf2060359ea0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#a10ef9f199fb074a7efafaf2060359ea0">clipboard_paste</a> (int clipboard_id, int region, void *buf, size_t count)</td></tr>
-<tr class="memdesc:a10ef9f199fb074a7efafaf2060359ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">this function copies from the system to the application the data in a certain region.  <a href="#a10ef9f199fb074a7efafaf2060359ea0">More...</a><br /></td></tr>
 <tr class="separator:a10ef9f199fb074a7efafaf2060359ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a224bc274497cef773f93867dc2473f0a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#a224bc274497cef773f93867dc2473f0a">clipboard_wait</a> (int clipboard_id, int region, void *buf, size_t count)</td></tr>
-<tr class="memdesc:a224bc274497cef773f93867dc2473f0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">this function waits for a change on a certain region, and when it happens the new data in that region is copied to memory pointed by buf up to a length of count.  <a href="#a224bc274497cef773f93867dc2473f0a">More...</a><br /></td></tr>
 <tr class="separator:a224bc274497cef773f93867dc2473f0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afce8312f8dc3a19bd8fa11fca9e2f5e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clipboard_8h.html#afce8312f8dc3a19bd8fa11fca9e2f5e1">clipboard_close</a> (int clipboard_id)</td></tr>
-<tr class="memdesc:afce8312f8dc3a19bd8fa11fca9e2f5e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">this function closes the connection between the application and the local clipboard.  <a href="#afce8312f8dc3a19bd8fa11fca9e2f5e1">More...</a><br /></td></tr>
 <tr class="separator:afce8312f8dc3a19bd8fa11fca9e2f5e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Clipboard API. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a75acd71dafcfe5e307088e9edc77518d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75acd71dafcfe5e307088e9edc77518d">&#9670;&nbsp;</a></span>SOCK_ADDRESS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SOCK_ADDRESS&#160;&#160;&#160;&quot;./CLIPBOARD_SOCKET&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Socket directory to communicate with the clipboard. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="afce8312f8dc3a19bd8fa11fca9e2f5e1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afce8312f8dc3a19bd8fa11fca9e2f5e1">&#9670;&nbsp;</a></span>clipboard_close()</h2>
 
@@ -120,11 +128,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>this function closes the connection between the application and the local clipboard. </p>
+<p>this function closes the connection between the application and the local clipboard.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">clipboard_id</td><td>- value returned by <a class="el" href="clipboard_8h.html#a3ca812ef003ef419a57d836e49bbca11" title="this function is called by the application to interact with the distributed clipboard. ">clipboard_connect()</a>.</td></tr>
+    <tr><td class="paramname">clipboard_id</td><td>- value returned by <a class="el" href="clipboard_8h.html#a3ca812ef003ef419a57d836e49bbca11">clipboard_connect()</a>.</td></tr>
   </table>
   </dd>
 </dl>
@@ -147,8 +154,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>this function is called by the application to interact with the distributed clipboard. </p>
+<p>this function is called by the application to interact with the distributed clipboard.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">clipboard_dir</td><td>- directory where the local clipboard was launched.</td></tr>
@@ -196,11 +202,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>this function copies the data pointed by buf to a region on the local clipboard </p>
+<p>this function copies the data pointed by buf to a region on the local clipboard</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">clipboard_id</td><td>- value returned by <a class="el" href="clipboard_8h.html#a3ca812ef003ef419a57d836e49bbca11" title="this function is called by the application to interact with the distributed clipboard. ">clipboard_connect()</a>. </td></tr>
+    <tr><td class="paramname">clipboard_id</td><td>- value returned by <a class="el" href="clipboard_8h.html#a3ca812ef003ef419a57d836e49bbca11">clipboard_connect()</a>. </td></tr>
     <tr><td class="paramname">region</td><td>- region the user wants to copy the data to [0 to 9]. </td></tr>
     <tr><td class="paramname">buf</td><td>- data that is to be copied to the local clipboard. </td></tr>
     <tr><td class="paramname">count</td><td>- the length of the data pointed by buf.</td></tr>
@@ -248,11 +253,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>this function copies from the system to the application the data in a certain region. </p>
+<p>this function copies from the system to the application the data in a certain region.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">clipboard_id</td><td>- value returned by <a class="el" href="clipboard_8h.html#a3ca812ef003ef419a57d836e49bbca11" title="this function is called by the application to interact with the distributed clipboard. ">clipboard_connect()</a>. </td></tr>
+    <tr><td class="paramname">clipboard_id</td><td>- value returned by <a class="el" href="clipboard_8h.html#a3ca812ef003ef419a57d836e49bbca11">clipboard_connect()</a>. </td></tr>
     <tr><td class="paramname">region</td><td>- region the user wants to paste data from [0 to 9]. </td></tr>
     <tr><td class="paramname">buf</td><td>- pointer to where the data is to be copied to. </td></tr>
     <tr><td class="paramname">count</td><td>- the length that the user wants to paste.</td></tr>
@@ -300,11 +304,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>this function waits for a change on a certain region, and when it happens the new data in that region is copied to memory pointed by buf up to a length of count. </p>
+<p>this function waits for a change on a certain region, and when it happens the new data in that region is copied to memory pointed by buf up to a length of count.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">clipboard_id</td><td>- value returned by <a class="el" href="clipboard_8h.html#a3ca812ef003ef419a57d836e49bbca11" title="this function is called by the application to interact with the distributed clipboard. ">clipboard_connect()</a>. </td></tr>
+    <tr><td class="paramname">clipboard_id</td><td>- value returned by <a class="el" href="clipboard_8h.html#a3ca812ef003ef419a57d836e49bbca11">clipboard_connect()</a>. </td></tr>
     <tr><td class="paramname">region</td><td>- region the user wants to wait on [0 to 9]. </td></tr>
     <tr><td class="paramname">buf</td><td>- pointer where the data is to be copied to. </td></tr>
     <tr><td class="paramname">count</td><td>- the length of the data to be copied.</td></tr>

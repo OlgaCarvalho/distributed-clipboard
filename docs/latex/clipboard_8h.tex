@@ -9,28 +9,36 @@ Clipboard A\+PI.
 \subsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{clipboard_8h_a75acd71dafcfe5e307088e9edc77518d}\label{clipboard_8h_a75acd71dafcfe5e307088e9edc77518d}} 
 \#define \mbox{\hyperlink{clipboard_8h_a75acd71dafcfe5e307088e9edc77518d}{S\+O\+C\+K\+\_\+\+A\+D\+D\+R\+E\+SS}}~\char`\"{}./C\+L\+I\+P\+B\+O\+A\+R\+D\+\_\+\+S\+O\+C\+K\+ET\char`\"{}
-\begin{DoxyCompactList}\small\item\em Socket directory to communicate with the clipboard. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{clipboard_8h_a3ca812ef003ef419a57d836e49bbca11}{clipboard\+\_\+connect}} (char $\ast$clipboard\+\_\+dir)
-\begin{DoxyCompactList}\small\item\em this function is called by the application to interact with the distributed clipboard. \end{DoxyCompactList}\item 
+\item 
 int \mbox{\hyperlink{clipboard_8h_a62f59a8cbab5d9a47f13c26edef37d4e}{clipboard\+\_\+copy}} (int clipboard\+\_\+id, int region, void $\ast$buf, size\+\_\+t count)
-\begin{DoxyCompactList}\small\item\em this function copies the data pointed by buf to a region on the local clipboard \end{DoxyCompactList}\item 
+\item 
 int \mbox{\hyperlink{clipboard_8h_a10ef9f199fb074a7efafaf2060359ea0}{clipboard\+\_\+paste}} (int clipboard\+\_\+id, int region, void $\ast$buf, size\+\_\+t count)
-\begin{DoxyCompactList}\small\item\em this function copies from the system to the application the data in a certain region. \end{DoxyCompactList}\item 
+\item 
 int \mbox{\hyperlink{clipboard_8h_a224bc274497cef773f93867dc2473f0a}{clipboard\+\_\+wait}} (int clipboard\+\_\+id, int region, void $\ast$buf, size\+\_\+t count)
-\begin{DoxyCompactList}\small\item\em this function waits for a change on a certain region, and when it happens the new data in that region is copied to memory pointed by buf up to a length of count. \end{DoxyCompactList}\item 
+\item 
 void \mbox{\hyperlink{clipboard_8h_afce8312f8dc3a19bd8fa11fca9e2f5e1}{clipboard\+\_\+close}} (int clipboard\+\_\+id)
-\begin{DoxyCompactList}\small\item\em this function closes the connection between the application and the local clipboard. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Clipboard A\+PI. 
 
 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{clipboard_8h_a75acd71dafcfe5e307088e9edc77518d}\label{clipboard_8h_a75acd71dafcfe5e307088e9edc77518d}} 
+\index{clipboard.\+h@{clipboard.\+h}!S\+O\+C\+K\+\_\+\+A\+D\+D\+R\+E\+SS@{S\+O\+C\+K\+\_\+\+A\+D\+D\+R\+E\+SS}}
+\index{S\+O\+C\+K\+\_\+\+A\+D\+D\+R\+E\+SS@{S\+O\+C\+K\+\_\+\+A\+D\+D\+R\+E\+SS}!clipboard.\+h@{clipboard.\+h}}
+\subsubsection{\texorpdfstring{S\+O\+C\+K\+\_\+\+A\+D\+D\+R\+E\+SS}{SOCK\_ADDRESS}}
+{\footnotesize\ttfamily \#define S\+O\+C\+K\+\_\+\+A\+D\+D\+R\+E\+SS~\char`\"{}./C\+L\+I\+P\+B\+O\+A\+R\+D\+\_\+\+S\+O\+C\+K\+ET\char`\"{}}
+
+Socket directory to communicate with the clipboard. 
 
 \subsection{Function Documentation}
 \mbox{\Hypertarget{clipboard_8h_afce8312f8dc3a19bd8fa11fca9e2f5e1}\label{clipboard_8h_afce8312f8dc3a19bd8fa11fca9e2f5e1}} 
@@ -39,9 +47,7 @@ Clipboard A\+PI.
 \subsubsection{\texorpdfstring{clipboard\+\_\+close()}{clipboard\_close()}}
 {\footnotesize\ttfamily void clipboard\+\_\+close (\begin{DoxyParamCaption}\item[{int}]{clipboard\+\_\+id }\end{DoxyParamCaption})}
 
-
-
-this function closes the connection between the application and the local clipboard. 
+this function closes the connection between the application and the local clipboard.
 
 
 \begin{DoxyParams}{Parameters}
@@ -57,9 +63,7 @@ void
 \subsubsection{\texorpdfstring{clipboard\+\_\+connect()}{clipboard\_connect()}}
 {\footnotesize\ttfamily int clipboard\+\_\+connect (\begin{DoxyParamCaption}\item[{char $\ast$}]{clipboard\+\_\+dir }\end{DoxyParamCaption})}
 
-
-
-this function is called by the application to interact with the distributed clipboard. 
+this function is called by the application to interact with the distributed clipboard.
 
 
 \begin{DoxyParams}{Parameters}
@@ -75,9 +79,7 @@ this function is called by the application to interact with the distributed clip
 \subsubsection{\texorpdfstring{clipboard\+\_\+copy()}{clipboard\_copy()}}
 {\footnotesize\ttfamily int clipboard\+\_\+copy (\begin{DoxyParamCaption}\item[{int}]{clipboard\+\_\+id,  }\item[{int}]{region,  }\item[{void $\ast$}]{buf,  }\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})}
 
-
-
-this function copies the data pointed by buf to a region on the local clipboard 
+this function copies the data pointed by buf to a region on the local clipboard
 
 
 \begin{DoxyParams}{Parameters}
@@ -99,9 +101,7 @@ this function copies the data pointed by buf to a region on the local clipboard
 \subsubsection{\texorpdfstring{clipboard\+\_\+paste()}{clipboard\_paste()}}
 {\footnotesize\ttfamily int clipboard\+\_\+paste (\begin{DoxyParamCaption}\item[{int}]{clipboard\+\_\+id,  }\item[{int}]{region,  }\item[{void $\ast$}]{buf,  }\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})}
 
-
-
-this function copies from the system to the application the data in a certain region. 
+this function copies from the system to the application the data in a certain region.
 
 
 \begin{DoxyParams}{Parameters}
@@ -123,9 +123,7 @@ this function copies from the system to the application the data in a certain re
 \subsubsection{\texorpdfstring{clipboard\+\_\+wait()}{clipboard\_wait()}}
 {\footnotesize\ttfamily int clipboard\+\_\+wait (\begin{DoxyParamCaption}\item[{int}]{clipboard\+\_\+id,  }\item[{int}]{region,  }\item[{void $\ast$}]{buf,  }\item[{size\+\_\+t}]{count }\end{DoxyParamCaption})}
 
-
-
-this function waits for a change on a certain region, and when it happens the new data in that region is copied to memory pointed by buf up to a length of count. 
+this function waits for a change on a certain region, and when it happens the new data in that region is copied to memory pointed by buf up to a length of count.
 
 
 \begin{DoxyParams}{Parameters}

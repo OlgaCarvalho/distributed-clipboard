@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['publicvar',['publicVar',['../class_javadoc___test.html#a292887ac25652b1d8448430f583378c3',1,'Javadoc_Test']]]
+  ['sock_5faddress',['SOCK_ADDRESS',['../clipboard_8h.html#a75acd71dafcfe5e307088e9edc77518d',1,'clipboard.h']]]
 ];
